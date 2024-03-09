@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <>
       <Input />
-      <TodoList isActive={true} />
       <TodoList isActive={false} />
     </>
   );

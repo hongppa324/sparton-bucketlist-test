@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 type Props = {
   id: string;
-  label: string;
   placeholder: string;
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -10,14 +9,12 @@ type Props = {
 
 export default function LabeledInput({
   id,
-  label,
   placeholder,
   value,
   onChange,
 }: Props) {
   return (
     <>
-      <StyledLabel htmlFor={id}>{label}</StyledLabel>
       <StyledInput
         id={id}
         placeholder={placeholder}
@@ -33,8 +30,4 @@ const StyledInput = styled.input`
   border-radius: 5px;
   margin-right: 10px;
   padding-left: 10px;
-`;
-const StyledLabel = styled.label`
-  margin-right: 10px;
-  font-weight: 700;
 `;

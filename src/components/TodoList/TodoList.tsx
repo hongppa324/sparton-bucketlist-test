@@ -1,4 +1,4 @@
-import { StyledDiv, StyledTodoListHeader, StyledTodoListBox } from "./styles";
+import { StyledDiv, StyledTodoListBox } from "./styles";
 import Todo from "../Todo/Todo";
 import { useQuery } from "@tanstack/react-query";
 import { getTodos } from "../../axios/api";
@@ -23,9 +23,6 @@ export default function TodoList({ isActive }: Props) {
 
   return (
     <StyledDiv>
-      <StyledTodoListHeader>
-        {isActive ? "해야 할 일" : "완료한 일"}
-      </StyledTodoListHeader>
       <StyledTodoListBox>
         {data
           .filter((item: TodoType) => item.isDone === !isActive)

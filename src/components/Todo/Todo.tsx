@@ -44,7 +44,6 @@ export default function Todo({ todo, isActive }: Props) {
 
   return (
     <StyledDiv>
-      <StyledTitle>{todo.title}</StyledTitle>
       <StyledContent>{todo.content}</StyledContent>
       <TodoButton onClick={() => switchHandler(todo.id, !isActive)}>
         {isActive ? "완료" : "취소"}

@@ -3,12 +3,11 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   margin-top: 40px;
 `;
-const StyledButton = styled.button`
-  background-color: #b1a2ca;
-  color: white;
+const StyledImage = styled.img`
   height: 30px;
   width: 80px;
   border-radius: 5px;
+  cursor: pointer;
 `;
 
-export { StyledDiv, StyledButton };
+export { StyledDiv, StyledImage };
